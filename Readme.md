@@ -18,7 +18,6 @@
 - **IDE** - We strongly advise you to use an IDE which will help you to edit, compile and run Java code. Our recommendation is IntelliJ IDEA, which you can download for free at: https://www.jetbrains.com/idea/download
 - **JDK 17** - You will need a distribution of JDK 17 on your machine. Our recommendation is the Adoptium project, which you can download for free at: https://adoptium.net/
 
-
 ## Where should I add the logic of my truck agent?
 - Open the project in your favorite IDE and browse to [src/main/java/com/trustbit/truckagent/TruckAgentController.java](src/main/java/com/trustbit/truckagent/TruckAgentController.java)
 - The method `decide` will always be called by the simulation when the next decision is needed from your truck agent. The argument of this method contains all the information you need to decide for the next move. Just return an instance of [DecideRequest](src/main/java/com/trustbit/truckagent/model/DecideRequest.java) and the simulation will take over again.

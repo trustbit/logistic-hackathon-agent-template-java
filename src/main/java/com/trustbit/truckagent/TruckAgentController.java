@@ -8,6 +8,10 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class TruckAgentController {
 
+    /**
+     * See https://app.swaggerhub.com/apis/trustbit/trustbit-sustainable-logistics-simulation/1.0.0 for 
+     * a detailed description of this endpoint.
+     */
     @PostMapping("/decide")
     public DecideResponse decide(@RequestBody DecideRequest request) {
         // Always deliver the first cargo available, otherwise sleep until one is available
