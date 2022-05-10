@@ -20,36 +20,6 @@ public class TruckAgentControllerTests {
     private MockMvc mockMvc;
 
     @Test
-    public void emptyJsonBodyShouldResultInSleepResponse() throws Exception {
-        this.mockMvc.perform(
-                        post("/decide").contentType(MediaType.APPLICATION_JSON).content("{}"))
-                .andDo(print())
-                .andExpect(status().isOk())
-                .andExpect(jsonPath("$.command").value("SLEEP"))
-                .andExpect(jsonPath("$.argument").value(1));
-    }
-
-    @Test
-    public void emptyCargoListShouldResultInSleepResponse() throws Exception {
-        this.mockMvc.perform(
-                        post("/decide").contentType(MediaType.APPLICATION_JSON).content("{\"offers\":[]}"))
-                .andDo(print())
-                .andExpect(status().isOk())
-                .andExpect(jsonPath("$.command").value("SLEEP"))
-                .andExpect(jsonPath("$.argument").value(1));
-    }
-
-    @Test
-    public void singleCargoShouldResultInDeliverResponse() throws Exception {
-        this.mockMvc.perform(
-                        post("/decide").contentType(MediaType.APPLICATION_JSON).content("{\"offers\":[{\"uid\":\"123\"}]}"))
-                .andDo(print())
-                .andExpect(status().isOk())
-                .andExpect(jsonPath("$.command").value("DELIVER"))
-                .andExpect(jsonPath("$.argument").value(123));
-    }
-
-    @Test
     public void singleCargoFromJsonShouldResultInDeliverResponse() throws Exception {
         var jsonContent = new String(DeserializationTests.class.getResourceAsStream("/decide.json").readAllBytes());
 
