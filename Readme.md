@@ -12,7 +12,7 @@
   </p>
 </p>
 
-**For a detailed explanation of how to make a copy of this repository and get it into the competition build system, please visit [Agent template repositories and comeptition build system](https://github.com/trustbit/logistic-hackathon-public#3-create-a-new-ssh-key-for-the-competition-build-system). All questions about the simulation and its rules are answered under [Simulation](https://github.com/trustbit/logistic-hackathon-public#simulation).**
+**For a detailed explanation of how to make a copy of this repository and get it into the competition build system, please visit [Agent template repositories and competition build system](https://github.com/trustbit/logistic-hackathon-public#3-create-a-new-ssh-key-for-the-competition-build-system). All questions about the simulation and its rules are answered under [Simulation](https://github.com/trustbit/logistic-hackathon-public#simulation).**
 
 ## Prerequisites
 - **IDE** - We strongly advise you to use an IDE which will help you to edit, compile and run Java code. Our recommendation is IntelliJ IDEA, which you can download for free at: https://www.jetbrains.com/idea/download
