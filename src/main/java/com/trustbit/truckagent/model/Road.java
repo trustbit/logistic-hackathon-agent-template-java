@@ -3,9 +3,6 @@ package com.trustbit.truckagent.model;
 import lombok.Getter;
 import lombok.Setter;
 
-import java.util.List;
-import java.util.Map;
-
 // The world map can be downloaded by a truck agent from https://raw.githubusercontent.com/trustbit/logistic-hackathon-public/main/data/map.json during a simulation run.
 // It is not required to download it, but a team might be able to get some useful  information from the map to optimize their truck agents decisions.
 // To make individual decide requests as fast as possible, it is better to download the map at the very beginning, when the agent starts up,
@@ -13,12 +10,9 @@ import java.util.Map;
 
 @Getter
 @Setter
-public class Location {
-    private String city;
-    private String country;
-    private double lat;
-    private double lng;
-    private int population;
-    private List<Road> roads;
+public class Road {
+    private String dest;
+    private double km;
+    private double kmh;
+    private boolean major;
 }
-

@@ -24,9 +24,10 @@
 
 ## How can I test my truck agent?
 - Open the project in your favorite IDE and browse to [src/test/java/com/trustbit/truckagent/TruckAgentControllerTests.java](src/test/java/com/trustbit/truckagent/TruckAgentControllerTests.java)
-- This is an integration test which will start your agent and will call the `decide` method with the contents of file [src/test/resources/decide.json](src/test/resources/decide.json)
-- You can always change the `decide.json` file and debug your script.
-
+- This is an integration test which will start your agent and will call the `decide` method with the contents of file [src/test/resources/sample_decide_0.json](src/test/resources/sample_decide_0.json)
+- You can always change the test and debug your script.
+- Also checkout the other sample requests provided.
+- 
 ## How can I run the truck agent or its tests without an IDE?
 - `./gradlew clean bootRun` will start the truck agent, which will then service requests on port 8080.
 - `./gradlew clean test` will execute all the tests in the project.

@@ -10,7 +10,7 @@ public class TruckState {
     private int uid;
     private double balance;
     private String loc;
-    @JsonProperty("driving_non_stop")
-    private double drivingNonStop;
+    @JsonProperty("hours_since_full_rest")
+    private double hoursSinceFullRest;
     private double time;
 }

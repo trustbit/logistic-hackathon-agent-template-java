@@ -21,13 +21,13 @@ public class TruckAgentControllerTests {
 
     @Test
     public void singleCargoFromJsonShouldResultInDeliverResponse() throws Exception {
-        var jsonContent = new String(DeserializationTests.class.getResourceAsStream("/decide.json").readAllBytes());
+        var jsonContent = new String(DeserializationTests.class.getResourceAsStream("/sample_decide_0.json").readAllBytes());
 
         this.mockMvc.perform(
                         post("/decide").contentType(MediaType.APPLICATION_JSON).content(jsonContent))
                 .andDo(print())
                 .andExpect(status().isOk())
                 .andExpect(jsonPath("$.command").value("DELIVER"))
-                .andExpect(jsonPath("$.argument").value(10));
+                .andExpect(jsonPath("$.argument").value(57));
     }
 }
