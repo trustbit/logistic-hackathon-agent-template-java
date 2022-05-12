@@ -28,6 +28,6 @@ public class TruckAgentControllerTests {
                 .andDo(print())
                 .andExpect(status().isOk())
                 .andExpect(jsonPath("$.command").value("DELIVER"))
-                .andExpect(jsonPath("$.argument").value(57));
+                .andExpect(jsonPath("$.argument").value(100));
     }
 }
