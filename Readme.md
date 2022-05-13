@@ -27,7 +27,10 @@
 - This is an integration test which will start your agent and will call the `decide` method with the contents of file [src/test/resources/sample_decide_0.json](src/test/resources/sample_decide_0.json)
 - You can always change the test and debug your script.
 - Also checkout the other sample requests provided.
-- 
+
 ## How can I run the truck agent or its tests without an IDE?
 - `./gradlew clean bootRun` will start the truck agent, which will then service requests on port 8080.
 - `./gradlew clean test` will execute all the tests in the project.
+
+## Can I get more information about the model properties?
+Sure, check out our [API documentation](https://app.swaggerhub.com/apis-docs/trustbit/trustbit-sustainable-logistics-simulation/1.0.0) and also thoroughly read our [Simulation documentation](https://github.com/trustbit/logistic-hackathon-public#simulation).
